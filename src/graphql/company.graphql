@@ -1,0 +1,17 @@
+query AccountList {
+  accountList {
+    id
+    username
+    password
+  }
+}
+
+query Company {
+    name 
+    position 
+    Employees  
+    Project {
+      name
+    }
+  } 
+

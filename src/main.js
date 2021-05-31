@@ -1,4 +1,15 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import fetch from './plugins/fetch'
+
+
+import ElementPlus from 'element-plus';
+import 'element-plus/lib/theme-chalk/index.css';
+
+
+
+const app = createApp(App)
+app.use(fetch,{version: 3 })
+app.use(ElementPlus)
+app.mount('#app')

@@ -1,16 +1,23 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<template lang='pug'>
+div 
+
+  GraphQL
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GraphQL from './pages/GraphQL.vue'
+import code from './code.js'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    GraphQL
+  },
+  data () {
+    return {
+      DD: code
+    }
+  },
 }
 </script>
 
